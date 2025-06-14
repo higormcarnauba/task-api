@@ -41,9 +41,7 @@ API REST simples em Spring Boot de Lista de Tarefas
 
 2. Acesse: `http://localhost:8080/tasks`
 
-3. Testes
-
-Use Insomnia:
+Testes com Insomnia:
 
 1. **GET /tasks**
 
