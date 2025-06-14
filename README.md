@@ -4,7 +4,7 @@ API REST simples em Spring Boot de Lista de Tarefas
 
 ## 🎯 Objetivos
 
-* Entender os verbos HTTP (GET, POST) e status codes (201, 400)
+* Entender os verbos HTTP (GET, POST) e status codes (200, 201, 400, 404)
 * Criar endpoints REST em Java com Spring Boot
 
 ## 📝 Especificação
