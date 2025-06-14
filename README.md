@@ -1,6 +1,6 @@
 # Task API - Atividade Prática
 
-API REST simples em Spring Boot para gerenciar uma lista de tarefas em memória.
+API REST simples em Spring Boot de Lista de Tarefas
 
 ## 🎯 Objetivos
 
