@@ -12,14 +12,13 @@ import java.util.List;
 @RequestMapping(path = "/tasks", consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 public class TaskController {
 
-    // 1) Lista já inicializada com as duas tarefas
     private final List<String> tasks = new ArrayList<>(List.of(
         "Treino",
         "Avante"
     ));
 
-    // 2) GET /tasks → 200 OK + JSON
-    @GetMapping(consumes = MediaType.ALL_VALUE)  // permite GET sem text/plain
+
+    @GetMapping(consumes = MediaType.ALL_VALUE) 
     public ResponseEntity<List<String>> getAll() {
         return ResponseEntity
                 .ok()
@@ -27,16 +26,16 @@ public class TaskController {
                 .body(tasks);
     }
 
-    // 3) POST /tasks → text/plain → 201 ou 400
+
     @PostMapping
     public ResponseEntity<Void> add(@RequestBody String task) {
-        // validação
+
         if (task == null || task.trim().isEmpty()) {
             return ResponseEntity
                     .badRequest()
                     .build();
         }
-        // adiciona e retorna 201 Created
+
         tasks.add(task.trim());
         URI location = URI.create("/tasks/" + (tasks.size() - 1));
         return ResponseEntity
