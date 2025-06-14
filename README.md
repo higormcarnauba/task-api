@@ -1,10 +1,10 @@
 # Task API - Atividade Prática
 
-API REST simples em Spring Boot para gerenciar uma lista de tarefas em memória.
+API REST simples em Spring Boot de Lista de Tarefas
 
 ## 🎯 Objetivos
 
-* Entender os verbos HTTP (GET, POST) e status codes (201, 400)
+* Entender os verbos HTTP (GET, POST) e status codes (200, 201, 400, 404)
 * Criar endpoints REST em Java com Spring Boot
 
 ## 📝 Especificação
@@ -41,9 +41,7 @@ API REST simples em Spring Boot para gerenciar uma lista de tarefas em memória.
 
 2. Acesse: `http://localhost:8080/tasks`
 
-3. Testes
-
-Use Insomnia:
+Testes com Insomnia:
 
 1. **GET /tasks**
 
